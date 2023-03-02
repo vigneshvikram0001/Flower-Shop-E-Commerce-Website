@@ -1,0 +1,47 @@
+.features-icons {
+  width: 100;
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  padding: 3rem;
+  place-items: center;
+  gap: 10px;
+  .icon {
+    height: 100px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    background-color: #fff;
+    box-shadow: 0 0 10px #0000005e;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    img {
+      width: 60px;
+      height: 60px;
+    }
+    &:hover {
+      background-color: var(--dark-rose);
+      box-shadow: 0 0 10px var(--dark-rose);
+      h3{
+        color: #fff;
+      }
+      h5 {
+        color: #fff;
+      }
+    }
+    &-content {
+      h3 {
+        font-weight: bold;
+        color: #e71d45;
+      }
+      h5 {
+        color: #545454;
+      }
+    }
+  }
+}

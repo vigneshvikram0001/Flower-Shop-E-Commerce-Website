@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,600;0,700;0,900;1,400&family=Style+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+:root {
+  --font-script: "Style Script", cursive;
+  --big-font: 3rem;
+  --normal-size: 1.5rem;
+  --small-text: 0.8rem;
+  --dark-rose: #ff597b;
+  --light-rose: #ff8e9e;
+  --pink: #f9b5d0;
+  --white: #eeeeee;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@import "./home";
+@import "./about";
+@import "./icon";
+@import "./product";
+@import "./review";
+@import "./contact";
+@import "./footer";
+@import "./order-cart";
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(160, 197, 253, 0.397);  
+  backdrop-filter: blur(10px);
+  // background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 10px 30px #2828285e;
+  .logo {
+    color: #e71d45;
+    font-size: var(--normal-size);
+    font-weight: bold;
+    span {
+      color: #000;
+    }
+  }
+  nav.active {
+    top: 5rem;
+  }
+  nav a {
+    color: #000;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: all 0.45s ease;
+    &:hover {
+      color: var(--dark-rose);
+      transform: translate(10);
+    }
+  }
+  .icons a {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    color: var(--dark-rose);
+    filter: drop-shadow(0 4px 5px #52525251);
+    transition: all 0.35s ease;
+    &:hover {
+      color: dodgerblue;
+    }
+  }
+  #bars {
+    display: none;
+    font-size: 1.5rem;
+    color: #2d2d2d;
+    border: 1px solid #2d2d2d;
+    padding: 5px 7px;
+    border-radius: 5px;
+  }
+  .account {
+    position: absolute;
+    right: -20rem;
+    top: 6rem;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px #303030;
+    transition: all 0.35s ease;
+    background-color: rgb(160, 197, 253);  
+    &-btn {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      button {
+        width: 50%;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 20px;
+        color: #fff;
+        border: 2px solid #fff;
+        background-color: var(--dark-rose);
+        box-shadow: 0 0 10px var(--dark-rose);
+        transition: all 0.35s ease;
+        cursor: pointer;
+        &:hover {
+          box-shadow: 0 0 10px dodgerblue;
+          background-color: dodgerblue;
+        }
+      }
+    }
+    &-line {
+      background-color: #fff;
+      margin-bottom: 1rem;
+    }
+    &-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      a {
+        padding: 7px;
+        color: #2f2f2f;
+        transition: all 0.35s ease;
+        padding-left: 1rem;
+        &:hover {
+          background-color: var(--light-rose);
+          color: #fff;
+          border-radius: 2rem;
+          letter-spacing: 2px;
+        }
+      }
+    }
+    .close {
+      margin-top: 1rem;
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 2px solid #fff;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #fff;
+      background-color: var(--dark-rose);
+      transition: all 0.35s ease;
+      &:hover {
+        box-shadow: 0 0 10px dodgerblue;
+        background-color: dodgerblue;
+      }
+    }
+    &-active {
+      right: 1rem;
+    }
+  }
+}
+
+@import "./media";

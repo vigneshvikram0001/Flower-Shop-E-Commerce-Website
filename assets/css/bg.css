@@ -1,0 +1,54 @@
+.home{
+    background: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg{
+    background: linear-gradient(#00000063, #0000005b), url(../img/flower.jpg);
+    position: sticky;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+html::-webkit-scrollbar{
+    width: 5px;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--dark-rose);
+    border-radius: 1rem;
+}
+html::-webkit-scrollbar-track{
+    border-radius: 2rem;
+}
+.review-content::-webkit-scrollbar{
+    height: 3px;
+}
+.review-content::-webkit-scrollbar-track{
+    width: 20px;
+    border-radius: 2rem;
+}
+.review-content::-webkit-scrollbar-thumb{
+    background-color: #fff;
+}
+.order-cart::-webkit-scrollbar{
+    width: .8rem;
+}
+.order-cart::-webkit-scrollbar-thumb{
+    background-color: var(--dark-rose);
+    border-radius: 3rem;
+    border: 4px solid #fff;
+}
+.order-cart::-webkit-scrollbar-track{
+    margin-block: 5rem;
+}
+.blur.active{
+    filter: blur(20px);
+    position: fixed;
+    transition: all .4s ease;
+}

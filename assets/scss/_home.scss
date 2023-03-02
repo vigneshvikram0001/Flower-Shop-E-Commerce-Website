@@ -1,0 +1,44 @@
+.home{
+    padding-top: 5rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-content{
+        width: 65%;
+        h1{
+            font-size: 4.5rem;
+            font-weight: 700;
+            color: #015f7c;
+        }
+        h3{
+            margin-top: 0rem;
+            margin-bottom: 5px;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            color: var(--dark-rose);
+        }
+        p{
+            line-height: 2rem;
+            color: rgb(0, 55, 89);
+        }
+        button{
+            padding: 10px;
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px var(--dark-rose);
+            box-shadow: 20px;
+            border-radius: 20px;
+            margin-top: 1rem;
+            background-color: var(--dark-rose);
+            font-weight: bold;
+            color: #fff;
+            transition: all .35s ease;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 0 0 10px dodgerblue;
+                background-color: dodgerblue;
+            }
+        }
+    }
+}

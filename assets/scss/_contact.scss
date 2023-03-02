@@ -1,0 +1,82 @@
+.contact {
+  width: 100%;
+  min-height: 600px;
+  background-color: #fff;
+  padding: 3rem 10px 2rem;
+  .con {
+    width: 90%;
+    margin: auto;
+    padding: 3rem 2rem;
+    border-radius: 3rem;
+    .contact-content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      .form {
+        width: 50%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .form-input {
+          position: relative;
+          input,
+          textarea {
+            padding: 15px 20px 10px;
+            border-radius: 5px;
+            border: 1px solid #454545;
+            width: 100%;
+            outline: none;
+            font-size: 1.2rem;
+          }
+          h3 {
+            position: absolute;
+            top: 12px;
+            left: 20px;
+            transition: all 0.35s ease;
+            color: #909090;
+          }
+          input:focus ~ h3,
+          input:valid ~ h3 {
+            top: -15px;
+            padding: 0 5px;
+            background-color: var(--dark-rose);
+            border-radius: 10px;
+            color: #fff;
+          }
+          input:focus,
+          textarea:focus {
+            border: 1px solid var(--dark-rose);
+          }
+        }
+        .btn-submit {
+          padding: 10px;
+          border-radius: 20px;
+          border: 2px solid #fff;
+          background-color: var(--dark-rose);
+          color: #fff;
+          font-size: 1.2rem;
+          box-shadow: 0 0 10px var(--dark-rose);
+          transition: all 0.35s ease;
+          &:hover {
+            background: dodgerblue;
+            box-shadow: 0 0 10px dodgerblue;
+          }
+        }
+      }
+      .contact-img{
+          width: 50%;
+          img{
+              width: 100%;
+              height: 100%;
+          }
+      }
+    }
+  }
+}
+.form:nth-child(3) input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  display: none;
+}

@@ -1,0 +1,102 @@
+.product {
+  width: 100vw;
+  background-color: #dfdfdf;
+  padding: 3rem 10px 2rem;
+  .pdt {
+    width: 100%;
+    padding: 3rem 2rem;
+    margin: auto;
+    .product-content {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(300px, 1fr));
+      gap: 2rem;
+      .pro {
+        min-width: 300px;
+        z-index: 1;
+        background: #fff;
+        position: relative;
+        overflow: hidden;
+        border-radius: 1rem;
+        box-shadow: 0 0 15px #0000005d;
+        // min-height: 250px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        transition: all 0.35s ease;
+        &:hover .product-element .percent{
+            color: #fff;
+            background-color: dodgerblue;
+        }
+        &:hover .product-img {
+          transform: scale(1.1);
+        }
+        &:hover .product-add{
+            background: dodgerblue;
+            box-shadow: 0 0 10px dodgerblue;
+        }
+        &:hover{
+          background-color: var(--pink);
+        }
+        .product-element {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+          .percent {
+            font-weight: bold;
+            border-radius: 50px;
+            background-color: var(--light-rose);
+            padding: 2px 10px;
+            box-shadow: 0 0 10px #00000044;
+            transition: all .35s ease;
+          }
+          .add-element {
+            a {
+              margin: 0 10px;
+              font-size: 1.5rem;
+              color: var(--dark-rose);
+            }
+          }
+        }
+        .product-add {
+          position: absolute;
+          padding: 10px 20px;
+          bottom: 1rem;
+          right: 1rem;
+          border: 2px solid #fff;
+          border-top-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          color: #fff;
+          font-weight: bold;
+          background-color: var(--dark-rose);
+          box-shadow: 0 0 10px var(--dark-rose);
+          transition: all .35s ease;
+        }
+        .product-img {
+          width: 100%;
+          height: 200px;
+          object-fit: contain;
+          transition: all 0.35s ease;
+        }
+        .product-name {
+          padding: 10px 1rem;
+          .product-heading {
+            font-weight: 600;
+            color: #393939;
+          }
+          .product-price {
+            font-weight: bold;
+            margin: 5px 0;
+            color: green;
+            del {
+              margin-left: 5px;
+              font-weight: bold;
+              color: red;
+              text-decoration: line-through;
+            }
+          }
+        }
+      }
+    }
+  }
+}
