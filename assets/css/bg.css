@@ -37,7 +37,7 @@ html::-webkit-scrollbar-track{
     background-color: #fff;
 }
 .order-cart::-webkit-scrollbar{
-    width: .8rem;
+    width: .8.1rem;
 }
 .order-cart::-webkit-scrollbar-thumb{
     background-color: var(--dark-rose);
